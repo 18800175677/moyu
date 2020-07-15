@@ -1,0 +1,49 @@
+.loading_one {
+    padding: 10px;
+
+    @keyframes loading_one {
+        0% {
+            transform: scale(0.95);
+        }
+
+        50% {
+            transform: scale(0.8);
+        }
+
+        100% {
+            transform: scale(0.95);
+        }
+    }
+
+
+    .loading_container {
+        width: 180px;
+        height: 180px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .item {
+        width: 50%;
+        height: 50%;
+        border-radius: 16px;
+        animation: loading_one 4s linear infinite;
+        background: #667EFF;
+    }
+
+    .left_top {
+        opacity: 0.4;
+    }
+
+    .right_top {
+        opacity: 0.3;
+    }
+
+    .left_bottom {
+        opacity: 0.1;
+    }
+
+    .right_bottom {
+        opacity: 0.2;
+    }
+}

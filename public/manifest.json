@@ -1,0 +1,10 @@
+{
+  "short_name": "诗",
+  "name": "诗",
+  "manifest_version": 2,
+  "browser_action": {
+    "default_popup": "index.html",
+    "default_title": "诗"
+  },
+  "version": "1.0"
+}
