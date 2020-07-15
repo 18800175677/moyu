@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './index.less';
 import classNames from 'classnames';
 
@@ -7,8 +7,10 @@ const Container = ({
     history,
     routes
 }) => {
+    const [pathname, setPathname] = useState(history.location.pathname);
     const to = (path) => {
-        if (history.location.pathname === path) return;
+        if (pathname === path) return;
+        setPathname(path);
         history.push(path);
     };
     return <div className="container">
@@ -18,7 +20,7 @@ const Container = ({
                 routes.map(item => {
                     return <div
                         className={classNames("link_item", {
-                            'active': history.location.pathname === item.path
+                            'active': pathname === item.path
                         })}
                         onClick={() => to(item.path)}
                     >
