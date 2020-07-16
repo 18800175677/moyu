@@ -1,0 +1,113 @@
+.loading_seven {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @keyframes loading_seven1 {
+        50% {
+            transform: rotate(0);
+            stroke-dasharray: 0, 377;
+        }
+
+        100% {
+            transform: rotate(-360deg);
+            stroke-dasharray: 377, 0;
+        }
+    }
+
+    @keyframes loading_seven2 {
+        23% {
+            transform: rotate(0);
+            stroke-dasharray: 157, 157;
+
+        }
+
+        50% {
+            transform: rotate(0);
+            stroke-dasharray: 0, 314;
+        }
+
+        77% {
+            transform: rotate(-180deg);
+            stroke-dasharray: 157, 157;
+        }
+
+        100% {
+            transform: rotate(-360deg);
+            stroke-dasharray: 314, 0;
+        }
+    }
+
+    @keyframes loading_seven3 {
+        21% {
+            stroke-dasharray: 126, 126;
+        }
+
+        50% {
+            transform: rotate(0);
+            stroke-dasharray: 0, 251;
+        }
+
+        79% {
+            transform: rotate(-180deg);
+            stroke-dasharray: 126, 126;
+        }
+
+        100% {
+            transform: rotate(-360deg);
+            stroke-dasharray: 251, 0;
+        }
+    }
+
+    @keyframes loading_seven4 {
+        19% {
+            stroke-dasharray: 94, 94;
+        }
+
+        50% {
+            transform: rotate(0);
+            stroke-dasharray: 0, 188;
+        }
+
+        82% {
+            transform: rotate(-180deg);
+            stroke-dasharray: 94, 94;
+        }
+
+        100% {
+            transform: rotate(-360deg);
+            stroke-dasharray: 188, 0;
+        }
+    }
+
+    circle {
+        fill: none;
+        stroke-width: 5;
+        stroke-linecap: round;
+        transform-origin: center;
+    }
+
+    .circle1 {
+        stroke: #667EFF;
+        stroke-dasharray: 377, 0;
+        animation: loading_seven1 4s linear infinite;
+    }
+
+    .circle2 {
+        stroke: red;
+        stroke-dasharray: 314, 0;
+        animation: loading_seven2 4s linear infinite;
+    }
+
+    .circle3 {
+        stroke: orange;
+        stroke-dasharray: 251, 0;
+        animation: loading_seven3 4s linear infinite;
+    }
+
+    .circle4 {
+        stroke: green;
+        stroke-dasharray: 188, 0;
+        animation: loading_seven4 4s linear infinite;
+    }
+}

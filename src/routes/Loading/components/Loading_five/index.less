@@ -1,0 +1,20 @@
+.loading_five{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @keyframes loading_five {
+        50%{
+            border-color: fade(#667EFF, 60%);
+            transform: scale(0.8);
+        }
+    }
+    .loading_ctr{
+        width: 140px;
+        height: 140px;
+        border: 20px solid #667EFF;
+        border-radius: 50%;
+        box-shadow: 0px 0px 10px 5px fade(#667EFF, 60%);
+        animation: loading_five 4s ease-in-out infinite;
+        transform: scale(1);
+    }
+}

@@ -1,0 +1,27 @@
+.loading_four {
+    @keyframes loading_four {
+        50% {
+            stroke-dasharray: 377, 0;
+            transform: rotate(0);
+        }
+
+        100% {
+            transform: rotate(360deg);
+            stroke-dasharray: 0, 377;
+        }
+    }
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .circle {
+        fill: none;
+        stroke: #667EFF;
+        stroke-width: 20;
+        stroke-linecap: round;
+        stroke-dasharray: 0, 377;
+        transform-origin: center;
+        animation: loading_four 2s linear infinite;
+    }
+}

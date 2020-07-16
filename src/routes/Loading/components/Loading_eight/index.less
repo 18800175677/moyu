@@ -1,0 +1,125 @@
+.loading_eight {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    @keyframes loading_eight1 {
+        0% {
+            height: 10px;
+            transform: translateY(0);
+        }
+
+        50% {
+            height: 42px;
+            transform: translateY(-28px);
+        }
+
+        100% {
+            height: 10px;
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes loading_eight2 {
+        0% {
+            height: 10px;
+            transform: translateY(0);
+        }
+
+        50% {
+            height: 90px;
+            transform: translateY(-27px);
+        }
+
+        100% {
+            height: 10px;
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes loading_eight3 {
+        0% {
+            height: 10px;
+            transform: translateY(0);
+        }
+
+        50% {
+            height: 118px;
+            transform: translateY(-21px);
+        }
+
+        100% {
+            height: 10px;
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes loading_eight4 {
+        0% {
+            height: 10px;
+            transform: translateY(0);
+        }
+
+        50% {
+            height: 130px;
+            transform: translateY(-10px);
+        }
+
+        100% {
+            height: 10px;
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes loading_eight5 {
+        0% {
+            height: 10px;
+            transform: translateY(0);
+        }
+
+        50% {
+            height: 142px;
+            transform: translateY(7px);
+        }
+
+        100% {
+            height: 10px;
+            transform: translateY(0);
+        }
+    }
+
+    p {
+        width: 10px;
+        height: 10px;
+        background: linear-gradient(pink, pink);
+        margin: 0 5px;
+        border-radius: 5px;
+        filter: hue-rotate(calc(var(--index) * 10deg));
+        animation-delay: calc(var(--index) * .1s);
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+        animation-duration: 3s;
+        transform: translateY(0);
+    }
+
+    .item1 {
+        animation-name: loading_eight1;
+    }
+
+    .item2 {
+        animation-name: loading_eight2;
+    }
+
+    .item3 {
+        animation-name: loading_eight3;
+    }
+
+    .item4 {
+        animation-name: loading_eight4;
+    }
+
+    .item5 {
+        animation-name: loading_eight5;
+    }
+}

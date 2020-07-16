@@ -1,0 +1,138 @@
+.loading_nine {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @keyframes loading_nine1 {
+
+        30%,
+        50% {
+            width: 100px;
+            height: 20px;
+            left: 30px;
+            top: 50px;
+        }
+
+        80% {
+            width: 20px;
+            height: 20px;
+            top: 30px;
+            left: 70px;
+        }
+    }
+
+    @keyframes loading_nine2 {
+
+        30%,
+        50% {
+            height: 100px;
+            width: 20px;
+            left: 50px;
+            top: 30px;
+        }
+
+        80% {
+            width: 20px;
+            height: 20px;
+            top: 70px;
+            left: 30px;
+        }
+    }
+
+    @keyframes loading_nine3 {
+
+        30%,
+        50% {
+            height: 100px;
+            width: 20px;
+            right: 50px;
+            top: 30px;
+        }
+
+        80% {
+            width: 20px;
+            height: 20px;
+            top: 70px;
+            right: 30px;
+        }
+    }
+
+    @keyframes loading_nine4 {
+
+        30%,
+        50% {
+            width: 100px;
+            height: 20px;
+            left: 30px;
+            bottom: 50px;
+        }
+
+        80% {
+            width: 20px;
+            height: 20px;
+            bottom: 30px;
+            left: 70px;
+        }
+    }
+
+    @keyframes loading_nine5 {
+        0% {
+            transform: rotate(0);
+        }
+
+        30%,
+        50% {
+            transform: rotate(180deg);
+        }
+
+        80%,
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+
+    .loading_ctr {
+        width: 160px;
+        height: 160px;
+        position: relative;
+        animation: loading_nine5 4s linear infinite;
+
+        p {
+            border-radius: 10px;
+            position: absolute;
+            animation-timing-function: linear;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            width: 20px;
+            height: 20px;
+        }
+
+        .line1 {
+            top: 30px;
+            left: 70px;
+            background: fade(red, 50%);
+            animation-name: loading_nine1;
+        }
+
+        .line2 {
+            top: 70px;
+            left: 30px;
+            background: fade(green, 50%);
+            animation-name: loading_nine2;
+        }
+
+        .line3 {
+            top: 70px;
+            right: 30px;
+            background: fade(gray, 50%);
+            animation-name: loading_nine3;
+        }
+
+        .line4 {
+            bottom: 30px;
+            left: 70px;
+            background: fade(blue, 50%);
+            animation-name: loading_nine4;
+        }
+    }
+}

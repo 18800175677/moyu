@@ -4,8 +4,8 @@ import './index.less';
 const LoadingThree = () => {
     return <div className="loading_three loading_item">
         <svg width="160" height="160">
-            <circle class="mouth" cx="80" cy="80" r="60"></circle>
-            <circle class="eye" cx="80" cy="80" r="60"></circle>
+            <circle className="mouth" cx="80" cy="80" r="60"></circle>
+            <circle className="eye" cx="80" cy="80" r="60"></circle>
         </svg>
     </div>
 }
