@@ -12,6 +12,16 @@ import LoadingEight from './components/Loading_eight';
 import LoadingNine from './components/Loading_nine';
 
 const Loading = () => {
+    window.L2Dwidget.init({
+        "display": {
+            "superSample": 2,
+            "width": 200,
+            "height": 400,
+            "position": "right",
+            "hOffset": 0,
+            "vOffset": 0
+        }
+    });
     return <div className="loading-page">
         <LoadingOne />
         <LoadingTwo />
