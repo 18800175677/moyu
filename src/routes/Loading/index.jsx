@@ -12,6 +12,8 @@ import LoadingSeven from './components/Loading_seven';
 import LoadingEight from './components/Loading_eight';
 import LoadingNine from './components/Loading_nine';
 import LoadingTen from './components/Loading_ten';
+import LoadingEleven from './components/Loading_eleven';
+import LoadingTwelve from './components/Loading_twelve';
 
 const Loading = () => {
     let timer = null;
@@ -45,6 +47,8 @@ const Loading = () => {
             <LoadingEight />
             <LoadingNine />
             <LoadingTen />
+            <LoadingEleven />
+            <LoadingTwelve />
         </div>
     </Page>;
 };
