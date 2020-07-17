@@ -1,4 +1,5 @@
 import React from 'react';
+import Page from '../../components/Page';
 import './index.less';
 
 import LoadingOne from './components/Loading_one';
@@ -10,6 +11,7 @@ import LoadingSix from './components/Loading_six';
 import LoadingSeven from './components/Loading_seven';
 import LoadingEight from './components/Loading_eight';
 import LoadingNine from './components/Loading_nine';
+import LoadingTen from './components/Loading_ten';
 
 const Loading = () => {
     let timer = null;
@@ -31,17 +33,20 @@ const Loading = () => {
     };
 
     loop();
-    return <div className="loading-page">
-        <LoadingOne />
-        <LoadingTwo />
-        <LoadingThree />
-        <LoadingFour />
-        <LoadingFive />
-        <LoadingSix />
-        <LoadingSeven />
-        <LoadingEight />
-        <LoadingNine />
-    </div>;
+    return <Page>
+        <div className="loading-page">
+            <LoadingOne />
+            <LoadingTwo />
+            <LoadingThree />
+            <LoadingFour />
+            <LoadingFive />
+            <LoadingSix />
+            <LoadingSeven />
+            <LoadingEight />
+            <LoadingNine />
+            <LoadingTen />
+        </div>
+    </Page>;
 };
 
 export default Loading;
